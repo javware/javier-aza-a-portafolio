@@ -1,0 +1,130 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "JUNIO / 2023 – ACTUALMENTE",
+    title: "BACKEND DEVELOPER",
+    company: "ALIMDREAMS",
+    description:
+      "Empresa de desarrollo de software que colabora con diversas empresas especializada en soluciones personalizadas donde implementé y mantuve aplicaciones con Python, Django Rest API, PostgreSQL y AWS, optimizando sistemas y asegurando entregas a tiempo. Participé en proyectos como:",
+    options: [
+      {
+        title: "Clínica Aviva :",
+        description:
+          "Contribuí en el backend, desarrollando y optimizando las API’s,donde también se ha integrado la pasarela de pago Izipay y generando reportes de ventas para su página y portal web.",
+        link: "https://www.aviva.pe/",
+      },
+
+      {
+        title: "Caja Recaudadora (Clínica Aviva) :",
+        description:
+          "Realicé el mantenimiento y optimización de las API’s, asegurando su correcto funcionamiento y mejorando la eficiencia del sistema.",
+        link: "",
+      },
+      {
+        title: "Fluye Bottle :",
+        description:
+          "Tienda eCommerce, trabajé en el backend desarrollando nuevas API para mejorar las funcionalidades, incluyendo cálculos de cupones, facturación electrónica con NubeFact e integración de pasarelas de pago como Izipay, Mercado Pago y OpenPay. Además, proporcioné mantenimiento a otras API para optimizar el proceso de compra.",
+        link: "https://fluyebottle.com/",
+      },
+      {
+        title: "UP Capacitaciones :",
+        description:
+          "Participé en el desarrollo del backend de la plataforma que ofrece cursos y especializaciones, integrando certificaciones y registro manual de compra e integrando una pasarela de pagos con Izipay, además de utilizar Vimeo para la carga de videos educativos.",
+        link: "https://up-capacitaciones.com/",
+      },
+      {
+        title: "Simulator :",
+        description:
+          "Creación de un sistema de exámenes con preguntas y opción de descarga de PDF para estudiantes.",
+        link: "https://simulador.alimdreams.com/",
+      },
+    ],
+  },
+  {
+    date: "FEBRERO / 2020 – JUNIO / 2023",
+    title: "FULLSTACK DEVELOPER",
+    company: "XPRESS COURIER",
+    description:
+      "Es una empresa especializada en entregas rápidas y seguras de paquetes, tanto locales como internacionales. Se distingue por su eficiencia, puntualidad y servicio personalizado.",
+    options: [
+      {
+        title: "",
+        description:
+          "Desarrollé una plataforma web integral con Python y Django, implementando API REST y gestionando bases de datos con PostgreSQL.",
+      },
+      {
+        title: "",
+        description:
+          "Creé interfaces responsivas con HTML, CSS y JavaScript, mejorando la experiencia del usuario.",
+      },
+      {
+        title: "",
+        description:
+          "Gestioné el despliegue en Digital Ocean con Nginx y Gunicorn, optimizando disponibilidad y rendimiento.",
+      },
+      {
+        title: "",
+        description:
+          "Colaboré con equipos de diseño y logística para desarrollar soluciones que mejoraron la eficiencia operativa.",
+      },
+    ],
+    link:""
+  },
+  {
+    date: "ENERO / 2020 – FEBRERO / 2020",
+    title: "FULLSTACK DEVELOPER",
+    company: "LIFESURE",
+    description:
+      "Tienda eCommerce especializada en productos medicinales y de belleza, enfocada en la salud y el bienestar de sus clientes.",
+    options: [
+      {
+        title: "",
+        description:
+          "Implementé y mantuve la plataforma con WooCommerce, optimizando el proceso de compra para una experiencia fluida.",
+      },
+      {
+        title: "",
+        description:
+          "Desarrollé funcionalidades personalizadas, como la toma de pedidos vía WhatsApp, mejorando la atención al cliente.",
+      },
+      {
+        title: "",
+        description:
+          "Proporcioné mantenimiento y soporte técnico, asegurando el correcto funcionamiento de la tienda en línea.",
+      },
+    ],
+    link:"https://www.lifesure.com.pe/"
+  },
+  {
+    date: "OCTUBRE / 2019 – DICIEMBRE / 2019",
+    title: "BACKEND DEVELOPER",
+    company: "SISTEMA DE CALCULO DE PENAS JUDICIALES",
+    description:
+      "Desarrollo de un sistema para el cálculo automático de penas judiciales basado en criterios legales, mejorando la precisión y eficiencia del proceso.",
+    options: [
+      {
+        title: "",
+        description:
+          "Implementé API’s de autenticación y gestión de planes con Django DRF.",
+      },
+      {
+        title: "",
+        description:
+          "Proporcioné mantenimiento y soporte técnico, garantizando el correcto funcionamiento del sistema.",
+      },
+    ],
+    link:"https://calculadoradepenas.pe/calculadora/home"
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

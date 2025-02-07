@@ -1,0 +1,327 @@
+---
+import GitHub from "./icons/GitHub.astro";
+import Swagger from "./icons/Swagger.astro";
+import Typescript from "./icons/Typescript.astro";
+import Html5 from "./icons/Html5.astro";
+import Css from "./icons/Css_old.astro";
+import Redux from "./icons/Redux.astro";
+import Django_rest from "./icons/Django_rest.astro";
+import Figma from "./icons/Figma.astro";
+import Tanstack from "./icons/Tanstack.astro";
+import Bootstrap from "./icons/Bootstrap.astro";
+import Expressjs from "./icons/Expressjs.astro";
+import Sequelize from "./icons/Sequelize.astro";
+import Javascript from "./icons/Javascript.astro";
+import Postgresql from "./icons/Postgresql.astro";
+import Reactrouter from "./icons/Reactrouter.astro";
+import NextJS from "./icons/NextJS.astro";
+import Django from "./icons/Django.astro";
+import Zod from "./icons/Zod.astro";
+import Nodejs from "./icons/Nodejs.astro";
+import React from "./icons/React.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Link from "./icons/Link.astro";
+import LinkButton from "./LinkButton.astro";
+
+const TAGS = {
+  SWAGGER: {
+    name: "Swagger",
+    class: "bg-[#003159] text-white",
+    icon: Swagger,
+  },
+  TYPESCRIPT: {
+    name: "Typescript",
+    class: "bg-[#003159] text-white",
+    icon: Typescript,
+  },
+  NEXT: {
+    name: "Next.js",
+    class: "bg-black text-white",
+    icon: NextJS,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
+  REACT: {
+    name: "React",
+    class: "bg-[#003159] text-white",
+    icon: React,
+  },
+  NODEJS: {
+    name: "Nodejs",
+    class: "bg-[#003159] text-white",
+    icon: Nodejs,
+  },
+  DJANGO: {
+    name: "Django",
+    class: "bg-[#003159] text-white",
+    icon: Django,
+  },
+  HTML: {
+    name: "HTML5",
+    class: "bg-[#003159] text-white",
+    icon: Html5,
+  },
+  CSS: {
+    name: "CSS3",
+    class: "bg-[#003159] text-white",
+    icon: Css,
+  },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#F7DF1E] text-black",
+    icon: Javascript,
+  },
+  REACT_ROUTER: {
+    name: "React Router",
+    class: "bg-[#003159] text-white",
+    icon: Reactrouter,
+  },
+  REDUX: {
+    name: "Redux",
+    class: "bg-black text-white",
+    icon: Redux,
+  },
+  EXPRESS: {
+    name: "Express.js",
+    class: "bg-[#003159] text-white",
+    icon: Expressjs,
+  },
+  SEQUELIZE: {
+    name: "Sequelize",
+    class: "bg-[#52B0E7] text-white",
+    icon: Sequelize,
+  },
+  POSTGRESQL: {
+    name: "PostgreSQL",
+    class: "bg-[#336791] text-white",
+    icon: Postgresql,
+  },
+  RESTFRAMEWORK: {
+    name: "Django REST",
+    class: "bg-[#003159] text-white",
+    icon: Django_rest,
+  },
+  FIGMA: {
+    name: "Figma",
+    class: "bg-[#F24E1E] text-white",
+    icon: Figma,
+  },
+  TANSTACK: {
+    name: "TanStack Query",
+    class: "bg-[#003159] text-white",
+    icon: Tanstack,
+  },
+  BOOTSTRAP: {
+    name: "Bootstrap",
+    class: "bg-[#003159] text-white",
+    icon: Bootstrap,
+  },
+  ZOD: {
+    name: "Zod",
+    class: "bg-black text-white",
+    icon: Zod,
+  },
+};
+const PROJECTS = [
+  {
+    title: "SISTEMA ECLESIAL BELÉN",
+    description:
+      "Plataforma de gestión para iglesias, diseñado para facilitar el registro de miembros, gestión de eventos, y administración de recursos eclesiales. Este sistema permite realizar acciones como el registro, edición y desactivación de miembros, y la asignación de tareas y eventos. Utiliza Django Rest Framework para la API y React para el front-end, garantizando una experiencia fluida y moderna. La interfaz es responsiva y fue desarrollada con Tailwind CSS.",
+    github: [
+      {
+        title: "Backend",
+        link: "https://github.com/javware/belen-bend",
+      },
+      {
+        title: "Frontend",
+        link: "https://github.com/javware/belen-fend",
+      },
+    ],
+    image: "/projects/Eclecial.png",
+    tags: [
+      TAGS.DJANGO,
+      TAGS.RESTFRAMEWORK,
+      TAGS.POSTGRESQL,
+      TAGS.NODEJS,
+      TAGS.REACT,
+      TAGS.TANSTACK,
+      TAGS.REACT_ROUTER,
+      TAGS.REDUX,
+      TAGS.ZOD,
+      TAGS.TYPESCRIPT,
+      TAGS.TAILWIND,
+    ],
+  },
+  {
+    title: "SISTEMA GESTIÓN DE EVENTOS",
+    description:
+      "Sistema para gestionar eventos, que permite a los usuarios crear, editar y eliminar eventos de manera eficiente. El sistema incluye funcionalidades como la asignación de participantes, gestión de fechas y lugares, y el seguimiento del estado de los eventos. La interfaz es intuitiva y responsiva, creada con Tailwind CSS, y el código está desarrollado en TypeScript.",
+    github: [
+      {
+        title: "Frontend",
+        link: "https://github.com/javware/event-fend",
+      },
+    ],
+    image: "/projects/systemEvent.jpg",
+    tags: [
+      TAGS.REACT,
+      TAGS.TANSTACK,
+      TAGS.REACT_ROUTER,
+      TAGS.REDUX,
+      TAGS.ZOD,
+      TAGS.TYPESCRIPT,
+      TAGS.TAILWIND,
+    ],
+  },
+
+  {
+    title: "ADMINISTRADOR DE PRODUCTOS - PERN STACK",
+    description:
+      "Plataforma de administración de productos utilizando PostgreSQL, Express, React y Node.js. Implementé REST API’s con Node, Express, Sequelize y TypeScript. En el frontend, creé una interfaz dinámica y responsiva con React y React Router DOM, aplicando Tailwind CSS para un diseño moderno.",
+    link: "",
+    github: [
+      {
+        title: "Backend",
+        link: "https://github.com/javware/rest-apis-typescript-bend",
+      },
+      {
+        title: "Frontend",
+        link: "https://github.com/javware/rest-apis-typescript-fend",
+      },
+    ],
+    image: "/projects/admin_product.png",
+    tags: [
+      TAGS.POSTGRESQL,
+      TAGS.EXPRESS,
+      TAGS.REACT,
+      TAGS.NODEJS,
+      TAGS.SEQUELIZE,
+      TAGS.TYPESCRIPT,
+      TAGS.TAILWIND,
+      TAGS.SWAGGER,
+    ],
+  },
+  {
+    title: "PLANIFICADOR DE GASTOS",
+    description:
+      "Plataforma para gestionar y planificar sus gastos. La funcionalidad incluye el registro, seguimiento y categorización de gastos, permitiendo un control financiero efectivo. Utiliza un diseño intuitivo y responsivo con Tailwind CSS, y está desarrollada en TypeScript para asegurar la calidad y escalabilidad del código.",
+    link: "https://expensecont.netlify.app",
+    github: [
+      {
+        title: "Frontend",
+        link: "https://github.com/javware/expense-control-contextapi-fend",
+      },
+    ],
+    image: "/projects/expensecont.png",
+    tags: [TAGS.REACT, TAGS.ZOD, TAGS.TYPESCRIPT, TAGS.TAILWIND],
+  },
+  {
+    title: "COTIZADOR DE CRIPTOMONEDAS EN TIEMPO REAL",
+    description:
+      "Cotizador de criptomonedas en tiempo real, utilizando una API externa para obtener datos actualizados. El manejo de estado global se realiza con Zustand y Redux, mientras que la validación de datos se hace con Zod. El proyecto está desarrollado en TypeScript para mayor seguridad y escalabilidad del código, y cuenta con una interfaz intuitiva y moderna creada con Tailwind CSS.",
+    link: "https://realtimecrypto-v1.netlify.app",
+    github: [
+      {
+        title: "Frontend",
+        link: "https://github.com/javware/crypto-fend",
+      },
+    ],
+    image: "/projects/RealTimeCrypto.png",
+    tags: [TAGS.REACT, TAGS.REDUX, TAGS.ZOD, TAGS.TYPESCRIPT, TAGS.TAILWIND],
+  },
+
+  {
+    title: "RECETARIO DE BEBIDAS",
+    description:
+      "Desarrollé una aplicación que permite a los usuarios buscar y explorar recetas de bebidas de manera intuitiva, utilizando una API externa para obtener los datos. La gestión de rutas se maneja con React Router, ofreciendo una experiencia de navegación fluida. El diseño es responsivo y atractivo, creado con Tailwind CSS, mientras que el estado global se controla eficientemente con Zustand. Utilicé Zod para validaciones de datos y TypeScript para garantizar un código seguro y fácil de mantener.",
+    link: "https://explorabebidas.netlify.app",
+    github: [
+      {
+        title: "Frontend",
+        link: "https://github.com/javware/recetarios_bebidas",
+      },
+    ],
+    image: "/projects/explorabebidas.png",
+    tags: [TAGS.REACT, TAGS.REDUX, TAGS.ZOD, TAGS.TYPESCRIPT, TAGS.TAILWIND],
+  },
+  {
+    title: "SISTEMA DE GESTIÓN DE ABARROTES - PoshSells",
+    description:
+      "Desarrollé un sistema para la gestión de abarrotes que incluye funcionalidades como la administración de inventarios, ventas, compras y control de stock. El sistema permite a los usuarios gestionar productos mediante códigos de barras, lo que facilita la venta y el seguimiento de productos.",
+    link: "",
+    github: [
+      {
+        title: "Código",
+        link: "https://github.com/javware/poshsells-pos",
+      },
+    ],
+    image: "/projects/Poshellpost.jpg",
+    tags: [TAGS.DJANGO,TAGS.RESTFRAMEWORK, TAGS.HTML, TAGS.CSS, TAGS.BOOTSTRAP, TAGS.POSTGRESQL],
+  },
+
+  
+
+];
+---
+
+<div class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+      <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+        <div class="w-full md:w-1/2">
+          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+            <img
+              alt="proyects"
+              class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+              loading="lazy"
+              src={image}
+            />
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 md:max-w-lg">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+            {title}
+          </h3>
+          <div class="flex flex-wrap mt-2">
+            <ul class="flex flex-wrap flex-row gap-2">
+              {tags.map((tag) => (
+                <li>
+                  <span
+                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                  >
+                    <tag.icon class="size-4" />
+                    {tag.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
+
+            <div class="mt-2 text-gray-700 dark:text-gray-400">
+              {description}
+            </div>
+            <footer class="flex items-end justify-start mt-4 gap-x-4">
+              {github &&
+                github.map((repo) => (
+                  <LinkButton key={repo.link} href={repo.link}>
+                    <GitHub class="size-6" />
+                    {repo.title}
+                  </LinkButton>
+                ))}
+
+              {link && (
+                <LinkButton href={link}>
+                  <Link class="size-4" />
+                  Preview
+                </LinkButton>
+              )}
+            </footer>
+          </div>
+        </div>
+      </article>
+    ))
+  }
+</div>
